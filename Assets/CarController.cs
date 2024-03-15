@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
-public class CarController : MonoBehaviour
+public class CarController : NetworkBehaviour
 {
     private float accelerationFactor = 5.0f;
     public float turnFactor = 3.5f;
@@ -17,10 +18,15 @@ public class CarController : MonoBehaviour
     float rotationAngle = 0;
 
     Rigidbody2D carRigidBody2D;
+    //public Camera camera;
 
     //called when the script instance is loaded
-     void Awake()
+    void Awake()
     {
+       /* if (!IsOwner)
+        {
+            camera.enabled = false;
+        }*/
         carRigidBody2D = GetComponent<Rigidbody2D>();
     }
     // Start is called before the first frame update
@@ -37,6 +43,7 @@ public class CarController : MonoBehaviour
 
     void FixedUpdate()
     {
+       if (!IsOwner) return;
         ApplyEngineForce();
 
         KillOrthogonalVelocity();
@@ -118,5 +125,10 @@ public class CarController : MonoBehaviour
     {
         steeringInput = inputVector.x;
         accelerationInput = inputVector.y;
+    }
+
+    public float GetVelocityMagnitude()
+    {
+        return carRigidBody2D.velocity.magnitude;
     }
 }
