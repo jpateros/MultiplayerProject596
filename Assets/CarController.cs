@@ -39,10 +39,12 @@ public class CarController : NetworkBehaviour
     void Update()
     {
         
+
     }
 
     void FixedUpdate()
     {
+        //ensure that we only have the owner of the script controlling the movement
        if (!IsOwner) return;
         ApplyEngineForce();
 
