@@ -30,5 +30,19 @@ namespace Unity.Multiplayer.Samples.Utilities.ClientAuthority
                 OnPlayerSpawned(player);
             }
         }
+
+        //ensurew that the client is spawned
+        void Start()
+        {
+            // Check if this instance belongs to the client
+            if (IsHost)
+            {
+                // Shift the client's spawn position to the right by 2 units
+                transform.position += Vector3.right * 2f;
+            }
+
+
+        }
     }
 }
+
