@@ -9,6 +9,7 @@ public class CarSfxHandler : MonoBehaviour
     public AudioSource tiresScreechAudio;
     public AudioSource engineAudio;
     public AudioSource carHitAudio;
+    public AudioSource winner;
     float desiredEnginePitch = 0.5f;
     float tiresScreechPitch = 0.5f;
 
@@ -74,7 +75,11 @@ public class CarSfxHandler : MonoBehaviour
         carHitAudio.pitch = UnityEngine.Random.Range(0.95f, 1.05f);
         carHitAudio.volume = volume;
 
-        if (!carHitAudio.isPlaying)
+        if (!carHitAudio.isPlaying && collision.gameObject.tag != "Finish")
             carHitAudio.Play();
+        else if (!winner.isPlaying && collision.gameObject.tag == "Finish")
+        {
+            winner.Play();
+        }
     }
 }

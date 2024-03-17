@@ -6,6 +6,7 @@ public class UserInputHandler : MonoBehaviour
     Vector2 inputVector;
     Vector3 playerPosition;
     bool allowInput; // Flag to control user input
+    public AudioSource horn;
 
     void Awake()
     {
@@ -15,7 +16,6 @@ public class UserInputHandler : MonoBehaviour
 
     void Update()
     {
-
         if (allowInput)
         {
             // Get input from the horizontal and vertical axes
@@ -27,6 +27,13 @@ public class UserInputHandler : MonoBehaviour
 
             // Update the player position
             playerPosition = transform.position;
+
+            // Check if the "H" key is pressed
+            if (Input.GetKeyDown(KeyCode.H))
+            {
+                // Play the horn sound
+                horn.Play();
+            }
         }
         Debug.Log("Waiting to be able to run");
     }
