@@ -3,7 +3,11 @@
 Multiplayer Game Overview:
 2D Multiplier TOP Down Racing Game with collisions, start countdown and sound effects based on in game situations.
 
-
+**User Controls:**
+-Arrow keys for forward, back, left, right: forward for gas forward, back for reverse, left/right to steer
+- WASD keys for same controls
+- "H" key to honk at the other player
+  
 **How to USE:**
 1. Clone the repo and open up the game.
 2. Create a new clone from the parallel sync menu and click "open in a new editor."
