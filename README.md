@@ -32,3 +32,9 @@ Multiplayer Game Overview:
 4. Colisison with other players / racetrack walls
 5. Clicking the "H" key on the keyboard to use the horn
 6. Hitting the finish line sound effect
+
+**Network Synchronization Required**
+1. Player positions for host and client
+2. Camera just following local client
+3. Countdown canvas synrochized on host and client through RPC calls
+4. Audio from in game activies
