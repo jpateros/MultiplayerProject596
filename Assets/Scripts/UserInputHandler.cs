@@ -1,11 +1,15 @@
+using Unity.Netcode;
 using UnityEngine;
 
-public class UserInputHandler : MonoBehaviour
+/// <summary>
+/// This class takes user input from the players for infromation used by CarController Script.
+/// </summary>
+public class UserInputHandler : NetworkBehaviour
 {
     CarController carController;
     Vector2 inputVector;
     Vector3 playerPosition;
-    bool allowInput; // Flag to control user input
+    bool allowInput; 
     public AudioSource horn;
 
     void Awake()
@@ -14,24 +18,26 @@ public class UserInputHandler : MonoBehaviour
         allowInput = true;
     }
 
+    //Constantly get the user input for the 
     void Update()
     {
+        //Netwroking Check: only control user input for the player owning script 
+        if (!IsOwner) return;
+
+        //Allow both players to start once the coiuntdown has finished
         if (allowInput)
         {
-            // Get input from the horizontal and vertical axes
+            // Get input from the horizontal and vertical axes update Car Controller
             inputVector.x = Input.GetAxis("Horizontal");
             inputVector.y = Input.GetAxis("Vertical");
-
-            // Set the input vector in the car controller
             carController.SetInputVector(inputVector);
 
             // Update the player position
             playerPosition = transform.position;
 
-            // Check if the "H" key is pressed
+            //Play horn sound when the "h" key is pressed
             if (Input.GetKeyDown(KeyCode.H))
             {
-                // Play the horn sound
                 horn.Play();
             }
         }
@@ -43,7 +49,7 @@ public class UserInputHandler : MonoBehaviour
         return playerPosition;
     }
 
-    // Method to enable user input after the countdown
+    // Callback method will enable user input after the countdown has finished
     public void EnableInput()
     {
         allowInput = true;

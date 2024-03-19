@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace Unity.Multiplayer.Samples.Utilities.ClientAuthority
 {
+
     /// <summary>
-    /// Used for syncing a transform with client side changes. This includes host. Pure server as owner isn't supported by this. Please use NetworkTransform
-    /// for transforms that'll always be owned by the server.
+    /// This class handles Netcode networking issues such as spawning client and host next to each other.
     /// </summary>
     [DisallowMultipleComponent]
     public class ClientNetworkTransform : NetworkTransform
@@ -31,13 +31,12 @@ namespace Unity.Multiplayer.Samples.Utilities.ClientAuthority
             }
         }
 
-        //ensurew that the client is spawned
+        //Ensure that the client is host and client are spawned at seperate locations
         void Start()
         {
-            // Check if this instance belongs to the client
+             //Host gets spawned to the right of the client at start of race
             if (IsHost)
             {
-                // Shift the client's spawn position to the right by 2 units
                 transform.position += Vector3.right * 2f;
             }
 

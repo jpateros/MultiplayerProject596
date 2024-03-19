@@ -1,12 +1,12 @@
-using Unity.Multiplayer.Samples.Utilities.ClientAuthority;
 using Unity.Netcode;
 using UnityEngine;
 
+/// <summary>
+/// This class contains the Netcode methods to start the Server, Client, and Host based on button click
+/// </summary>
 public class StartNetwork : MonoBehaviour
 {
-    public Transform clientSpawnPoint; // Assign this in the Inspector to a GameObject representing the desired spawn point for the client
-
-    // Start is called before the first frame update
+    
     public void StartServer()
     {
         NetworkManager.Singleton.StartServer();
@@ -22,7 +22,4 @@ public class StartNetwork : MonoBehaviour
         NetworkManager.Singleton.StartHost();
     }
 
-    
 }
-
-    
