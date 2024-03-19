@@ -1,14 +1,15 @@
 # MultiplayerProject596
 **Author: John Pateros -> jpateros5410@sdsu.edu** <br>
-Mulitplayer Game Overview:
+Multiplayer Game Overview:
 2D Multiplier TOP Down Racing Game with collisions, start countdown and sound effects based on in game situations.
 
 
 **How to USE:**
-1. Create a new clone from the parallel sync menu and click "open in a new editor."
-2. Start the game on the main and clone instance.
-3. Make one of the players the host and the other the client by clicking the UI buttons.
-4. Start the countdown button and begin to race your friend to finish line!
+1. Clone the repo and open up the game.
+2. Create a new clone from the parallel sync menu and click "open in a new editor."
+3. Start the game on both the main and clone instance.
+4. Make one of the players the host and the other the client by clicking the respective UI buttons (these will disappear on click).
+5. Start the countdown button and begin to race your friend to finish line!
 
 <centre><h2>Load Two instances and click "Start Race" button</h2></centre>
 ![Load Two instances and click "Start Race" button](https://github.com/jpateros/MultiplayerProject596/assets/112897027/e4b7eaa9-dfa1-45dc-a7c9-81e17b27566c)
