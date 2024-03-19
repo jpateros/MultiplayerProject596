@@ -5,9 +5,8 @@ Mulitplayer Game Overview:
 How to USE:
 1. Create a new clone from the parallel sync menu and click "open in a new editor."
 2. Start the game on the main and clone instance.
-  
-4. Make one of the players the host and the other the client by clicking the UI buttons.
-5. Start the countdown button and begin to race your friend to finish line!
+3. Make one of the players the host and the other the client by clicking the UI buttons.
+4. Start the countdown button and begin to race your friend to finish line!
 
 
 
