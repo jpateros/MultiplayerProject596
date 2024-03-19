@@ -1,8 +1,10 @@
 # MultiplayerProject596
+**Author: John Pateros -> jpateros5410@sdsu.edu**
 Mulitplayer Game Overview:
 2D Multiplier TOP Down Racing Game with collisions, start countdown and sound effects based on in game situations.
 
-How to USE:
+
+**How to USE:**
 1. Create a new clone from the parallel sync menu and click "open in a new editor."
 2. Start the game on the main and clone instance.
 3. Make one of the players the host and the other the client by clicking the UI buttons.
@@ -17,7 +19,7 @@ Track includes challenging dift turns
 ![image](https://github.com/jpateros/MultiplayerProject596/assets/112897027/c90458d7-89bf-49b8-af9d-6ab501905bd3)
 Winner hits the finish Line!
 
-Sound Effects Included:
+**Sound Effects Included:**
 1. 3 - 2 - 1 GO! beeps
 2. Motor running sounds
 3. Tires Screesching when drifting
