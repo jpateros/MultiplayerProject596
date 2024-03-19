@@ -9,6 +9,11 @@ How to USE:
 4. Start the countdown button and begin to race your friend to finish line!
 
 ![image](https://github.com/jpateros/MultiplayerProject596/assets/112897027/e4b7eaa9-dfa1-45dc-a7c9-81e17b27566c)
+Load Two instances and click "Start Race" button.
+![image](https://github.com/jpateros/MultiplayerProject596/assets/112897027/5ad41c4e-7185-4411-8678-918e74144bb9)
+Countdown will commence until GO
+![image](https://github.com/jpateros/MultiplayerProject596/assets/112897027/c90458d7-89bf-49b8-af9d-6ab501905bd3)
+Winner hits the finish Line!
 
 Sound Effects Included:
 1. 3 - 2 - 1 GO! beeps
