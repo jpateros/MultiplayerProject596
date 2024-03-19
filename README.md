@@ -42,3 +42,8 @@ Multiplayer Game Overview:
 2. Camera just following local client
 3. Countdown canvas synrochized on host and client through RPC calls
 4. Audio from in game activies
+
+**Art Included**
+1. Skid marks behind cars when drifting / braking
+2. Particle smoke rendering behind the cars
+3. Race Track Design 
