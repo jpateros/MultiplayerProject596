@@ -8,7 +8,7 @@ How to USE:
 3. Make one of the players the host and the other the client by clicking the UI buttons.
 4. Start the countdown button and begin to race your friend to finish line!
 
-
+![image](https://github.com/jpateros/MultiplayerProject596/assets/112897027/e4b7eaa9-dfa1-45dc-a7c9-81e17b27566c)
 
 Sound Effects Included:
 1. 3 - 2 - 1 GO! beeps
